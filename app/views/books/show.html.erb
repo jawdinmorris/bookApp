@@ -1,8 +1,9 @@
 <% @title="Amazon - #{@book.title}"%>
-<h1> <%= @book.title %> </h1>
-<h2>  <% @book.rating.times do %>
+<h1> <%= @book.title %>
+  <% @book.rating.times do %>
    *
-   <% end %> </h2>
+   <% end %> </h1>
    <h3> By <%= @book.author.name %> </h3>
-
+<%= image_tag @book.image_url, :alt => 'Picture of Book' %>
+<%= link_to "Add to favourites", new_favourite_book_user_path %>
 <p> This book has been viewed <%= @book.counter %> times. </p>
