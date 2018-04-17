@@ -1,0 +1,8 @@
+<% @title="Amazon - #{@book.title}"%>
+<h1> <%= @book.title %> </h1>
+<h2>  <% @book.rating.times do %>
+   *
+   <% end %> </h2>
+   <h3> By <%= @book.author.name %> </h3>
+
+<p> This book has been viewed <%= @book.counter %> times. </p>

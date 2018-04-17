@@ -1,3 +1,4 @@
+<% @title="Amazon - Books Books Books" %>
 <h1> BOOKS </h1>
 <% @books.each do |book| %>
 <h2><%= book.title %>
@@ -5,5 +6,6 @@
  *
  <% end %> </h2>
 <h3>By <%= book.author.name %> </h3>
+<h4> <%= link_to "View More..", book %> </h4>
 <br>
 <% end %>
