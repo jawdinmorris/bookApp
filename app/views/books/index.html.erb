@@ -1,0 +1,9 @@
+<h1> BOOKS </h1>
+<% @books.each do |book| %>
+<h2><%= book.title %>
+<% book.rating.times do %>
+ *
+ <% end %> </h2>
+<h3>By <%= book.author.name %> </h3>
+<br>
+<% end %>
