@@ -1,0 +1,6 @@
+<h1> Brick & Mortar Stores </h1>
+<% @stores.each do |store| %>
+ <h2><%= link_to store.title, store %> </h2>
+ <h3> <%= store.full_address %> </h3>
+ <br>
+ <% end %>

@@ -1,0 +1,9 @@
+<h1> <%= @store.title %> </h1>
+<h2> <%= @store.full_address %> </h2>
+<iframe
+  width="600"
+  height="450"
+  frameborder="0"
+  style="border:0"
+  src="https://www.google.com/maps/embed/v1/streetview?key=AIzaSyCBlAodTRLQOt9XqI1d0GZ-RqCYOLq2414&location=<%=@store.latitude%>,<%=@store.longitude%>&heading=210&pitch=10&fov=35">
+  </iframe>

@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   resources :books
   resources :users
   resources :favourite_book_users
+  resources :stores
 end

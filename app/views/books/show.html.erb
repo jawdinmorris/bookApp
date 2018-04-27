@@ -1,9 +1,15 @@
 <% @title="Amazon - #{@book.title}"%>
-<h1> <%= @book.title %>
-  <% @book.rating.times do %>
-   *
-   <% end %> </h1>
-   <h3> By <%= @book.author.name %> </h3>
-<%= image_tag @book.image_url, :alt => 'Picture of Book' %>
-<%= link_to "Add to favourites", new_favourite_book_user_path %>
-<p> This book has been viewed <%= @book.counter %> times. </p>
+<div class = "container">
+  <div class = "container">
+  <h1> <%= @book.title %>
+    <% @book.rating.times do %>
+     *
+    <% end %> </h1>
+  <h3> By <%= @book.author.name %> </h3>
+  </div>
+  <%= image_tag @book.image_url, :alt => 'Picture of Book', class: "book-pic" %>
+  <p>
+    <%= link_to "Add to favourites", new_favourite_book_user_path %>
+  </p>
+  <p> This book has been viewed <%= @book.counter %> times. </p>
+</div>
